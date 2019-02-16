@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="queue-submit">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/queues/resource/queue-submit.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

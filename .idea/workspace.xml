@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="38f72f16-1719-4a39-8d75-93518bb66364" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/8PuzzleQ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/8PuzzleQ.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/Algorithms, Part I.iml" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/Algorithms, Part I.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/list" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/out/production/8PuzzleQ/8puzzle.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/out/production/8PuzzleQ/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/out/production/8PuzzleQ/PuzzleChecker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/out/production/8PuzzleQ/Solver$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/out/production/8PuzzleQ/Solver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle00.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle00.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle01.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle02.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle02.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle03.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle03.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle04.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle04.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle05.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle05.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle06.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle06.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle07.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle07.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle08.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle08.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle09.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle09.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle11.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle12.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle13.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle14.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle14.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle15.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle15.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle16.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle16.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle17.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle17.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle18.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle18.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle19.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle19.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle20.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle21.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle21.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle22.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle22.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle23.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle23.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle24.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle24.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle25.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle26.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle26.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle27.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle27.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle28.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle28.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle29.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle29.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle2x2-00.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle2x2-00.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle2x2-01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle2x2-01.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle2x2-02.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle2x2-02.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle2x2-03.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle2x2-03.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle2x2-04.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle2x2-04.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle2x2-05.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle2x2-05.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle2x2-06.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle2x2-06.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle2x2-unsolvable1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle2x2-unsolvable1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle2x2-unsolvable2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle2x2-unsolvable2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle2x2-unsolvable3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle2x2-unsolvable3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle30.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle30.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle31.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle31.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle32.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle32.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle33.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle33.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle34.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle34.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle35.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle35.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle36.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle36.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle37.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle37.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle38.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle38.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle39.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle39.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-00.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-00.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-01.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-02.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-02.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-03.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-03.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-04.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-04.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-05.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-05.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-06.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-06.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-07.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-07.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-08.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-08.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-09.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-09.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-11.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-12.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-13.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-14.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-14.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-15.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-15.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-16.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-16.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-17.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-17.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-18.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-18.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-19.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-19.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-20.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-21.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-21.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-22.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-22.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-23.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-23.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-24.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-24.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-25.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-26.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-26.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-27.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-27.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-28.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-28.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-29.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-29.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-30.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-30.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-31.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-31.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-unsolvable.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-unsolvable.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-unsolvable1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-unsolvable1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle3x3-unsolvable2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle3x3-unsolvable2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle40.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle40.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle41.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle41.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle42.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle42.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle43.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle43.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle44.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle44.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle45.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle45.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle46.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle46.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle47.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle47.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle48.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle48.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle49.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle49.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-00.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-00.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-01.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-02.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-02.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-03.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-03.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-04.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-04.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-05.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-05.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-06.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-06.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-07.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-07.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-08.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-08.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-09.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-09.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-11.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-12.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-13.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-14.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-14.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-15.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-15.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-16.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-16.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-17.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-17.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-18.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-18.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-19.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-19.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-20.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-21.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-21.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-22.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-22.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-23.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-23.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-24.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-24.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-25.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-26.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-26.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-27.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-27.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-28.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-28.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-29.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-29.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-30.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-30.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-31.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-31.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-32.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-32.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-33.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-33.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-34.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-34.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-35.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-35.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-36.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-36.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-37.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-37.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-38.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-38.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-39.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-39.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-40.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-40.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-41.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-41.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-42.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-42.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-43.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-43.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-44.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-44.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-45.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-45.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-46.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-46.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-47.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-47.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-48.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-48.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-49.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-49.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-50.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-50.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-78.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-78.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-80.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-80.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle4x4-unsolvable.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle4x4-unsolvable.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8PuzzleQ/puzzle50.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8PuzzleQ/resource/puzzle50.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/Algorithms, Part I.iml" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/Algorithms, Part I.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/BruteCollinearPoints.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/FastCollinearPoints.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/LineSegment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/Point.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/collinear.zip" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/src/collinear.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/equidistant.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/equidistant.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/grid4x4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/grid4x4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/grid5x5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/grid5x5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/grid6x6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/grid6x6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/horizontal100.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/horizontal100.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/horizontal25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/horizontal25.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/horizontal5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/horizontal5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/horizontal50.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/horizontal50.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/horizontal75.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/horizontal75.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/inarow.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/inarow.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input10.png" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input100.png" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input100.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input100.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input1000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input1000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input10000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input10000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input150.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input150.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input20.png" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input20.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input200.png" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input200.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input200.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input200.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input2000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input2000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input250.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input250.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input299.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input299.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input300.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input300.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input3000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input3000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input350.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input350.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input40.png" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input40.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input40.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input40.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input400.png" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input400.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input400.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input400.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input4000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input4000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input48.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input48.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input50.png" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input50.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input50.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input50.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input5000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input5000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input56.png" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input56.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input56.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input56.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input6.png" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input6000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input6000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input8.png" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input80.png" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input80.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input80.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input80.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input8000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input8000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input9.png" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/input9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/input9.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/kw1260.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/kw1260.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/mystery10089.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/mystery10089.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/.idea/libraries/algs4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/Algorithms, Part I.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/BruteCollinearPoints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/FastCollinearPoints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/LineSegment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/Point$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/collinear.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/equidistant.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/grid4x4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/grid5x5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/grid6x6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/horizontal100.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/horizontal25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/horizontal5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/horizontal50.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/horizontal75.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/inarow.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input100.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input1000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input10000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input150.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input2000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input250.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input299.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input300.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input3000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input350.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input40.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input400.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input4000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input48.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input50.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input5000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input56.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input6000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input80.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input8000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/input9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/kw1260.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/mystery10089.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/patternRecognition.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/random152.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/random23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/random38.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/random91.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/rs1423.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/rs1423.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/vertical100.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/vertical25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/vertical5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/vertical50.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/out/production/patternRecognition/vertical75.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/patternRecognition.iml" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/patternRecognition.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/random152.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/random152.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/random23.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/random23.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/random38.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/random38.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/random91.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/random91.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/rs1423.png" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/rs1423.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/rs1423.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/rs1423.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/vertical100.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/vertical100.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/vertical25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/vertical25.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/vertical5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/vertical5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/vertical50.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/vertical50.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patternRecognition/vertical75.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patternRecognition/resource/vertical75.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/Deque.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/Permutation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/Permutation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/RandomizedQueue$RandomIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/RandomizedQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/RandomizedQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/algs4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/distinct.txt" beforeDir="false" afterPath="$PROJECT_DIR$/queues/resource/distinct.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/duplicates.txt" beforeDir="false" afterPath="$PROJECT_DIR$/queues/resource/duplicates.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/queues/resource/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/mediumTale.txt" beforeDir="false" afterPath="$PROJECT_DIR$/queues/resource/mediumTale.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/.idea/libraries/algs4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/.lift/algs4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/.lift/checkstyle-coursera.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/.lift/checkstyle-lift.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/.lift/checkstyle-suppressions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/.lift/spotbugs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/Algorithms, Part I.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/Deque$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/Deque$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/Deque.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/Permutation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/RandomizedQueue$RandomIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/RandomizedQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/algs4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/distinct.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/duplicates.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/mediumTale.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/permutation10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/permutation4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/permutation5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/permutation6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/permutation8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/queue-submit.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/queues.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/tale.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/out/production/queues/tinyTale.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/permutation10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/queues/resource/permutation10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/permutation4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/queues/resource/permutation4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/permutation5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/queues/resource/permutation5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/permutation6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/queues/resource/permutation6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/permutation8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/queues/resource/permutation8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/queue-submit.zip" beforeDir="false" afterPath="$PROJECT_DIR$/queues/resource/queue-submit.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/queues.iml" beforeDir="false" afterPath="$PROJECT_DIR$/queues/resource/queues.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/tale.txt" beforeDir="false" afterPath="$PROJECT_DIR$/queues/resource/tale.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues/tinyTale.txt" beforeDir="false" afterPath="$PROJECT_DIR$/queues/resource/tinyTale.txt" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/patternRecognition/src/BruteCollinearPoints.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="503">
+              <caret line="100" column="24" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/patternRecognition/src/BruteCollinearPoints.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="781" />
+    <option name="y" value="43" />
+    <option name="width" value="1472" />
+    <option name="height" value="1125" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="online_courses" type="b2602c69:ProjectViewProjectNode" />
+              <item name="8PuzzleQ" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="online_courses" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patternRecognition" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="online_courses" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patternRecognition" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550352100177" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.scopes" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.PercolationStats">
+    <configuration name="BruteCollinearPoints" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BruteCollinearPoints" />
+      <module name="patternRecognition" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PercolationStats" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PercolationStats" />
+      <module name="percolation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PercolationStats" />
+        <item itemvalue="Application.BruteCollinearPoints" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="38f72f16-1719-4a39-8d75-93518bb66364" name="Default Changelist" comment="" />
+      <created>1550350831080</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550350831080</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="781" y="43" width="1472" height="1125" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Learn" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24965034" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="CheckStyle" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/patternRecognition/src/BruteCollinearPoints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="100" column="24" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>algs4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>8PuzzleQ</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>8puzzle</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -8,13 +8,10 @@ public class Board {
     private final int d;
     private int hamming, manhattan;
     private int zeroX, zeroY;
-    private static int[][] goal;
-
 
 
     public Board(int[][] blocks) {
         d = blocks.length;
-        if(goal == null) buildGoal();
         hamming = 0;
         manhattan = 0;
         board = new int[d] [d];
@@ -23,11 +20,12 @@ public class Board {
             for (int j = 0; j < d; j++) {
                 int target = i * d + j + 1;
                 int value = blocks[i][j];
-                if (value == 0) {
-                   zeroX = i;
-                   zeroY = j;
-                }
                 board[i][j] = value;
+                if (value == 0) {
+                    zeroX = i;
+                    zeroY = j;
+                    continue;
+                }
                 if (value != target) hamming += 1;
                 int targetX = (value - 1) / d, targetY = (value - 1) % d;
                 manhattan += Math.abs(i - targetX) + Math.abs(j - targetY);
@@ -46,7 +44,15 @@ public class Board {
         return manhattan;
     }             // sum of Manhattan distances between blocks and goal
     public boolean isGoal() {
-        return this.equals(goal);
+        for (int i = 0; i < d; i++) {
+            for (int j = 0; j < d; j++) {
+                if (board[i][j] != i * d + j + 1) {
+                    if (i==d-1 && j == d-1 && board[i][j] == 0) return true;
+                    return false;
+                }
+            }
+        }
+        return false;
     }             // is this board the goal board?
     public Board twin() {
         int x1 = -1, x2 = -1, y1 = -1, y2 = -1;
@@ -68,6 +74,9 @@ public class Board {
     }                   // a board that is obtained by exchanging any pair of blocks
     public boolean equals(Object y) {
         if (y == null) return false;
+        if (!(y instanceof Board)) {
+            return false;
+        }
         Board that = (Board) y;
         if (this.d != that.d) return false;
         for (int i = 0; i < d; i++) {
@@ -115,16 +124,10 @@ public class Board {
         return newBoard;
     }
 
-    private void buildGoal() {
-        goal = new int[d][];
-        for (int i = 0; i < d; i++) {
-            goal[i] = new int[d];
-            for (int j = 0; j < d; j++) {
-                goal[i][j] = i * d + j + 1;
-            }
-        }
-        goal[d - 1][d - 1] = 0;
-    }
+    /**
+     * for test only
+     * @param args
+     */
     public static void main(String[] args) {
 
     }// unit tests (not graded)

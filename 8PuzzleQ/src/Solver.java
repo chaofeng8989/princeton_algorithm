@@ -2,16 +2,21 @@ import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.MinPQ;
 import edu.princeton.cs.algs4.StdOut;
 
-import java.util.*;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+
 
 public class Solver {
     private class Node implements Comparable<Node> {
         Board board;
+        int manhattan;
         Node pre;
         int move;
 
         public Node(Board board, Node pre, int move) {
             this.board = board;
+            this.manhattan = board.manhattan();
             this.pre = pre;
             this.move = move;
         }
@@ -28,10 +33,9 @@ public class Solver {
 
         @Override
         public int compareTo(Node o) {
-            return board.hamming() + move - o.board.hamming() - move;
+            return manhattan + move - o.manhattan - o.move;
         }
 
-        public boolean equals(Node o) {return board.equals(o.board);}
 
 
         @Override
@@ -47,7 +51,7 @@ public class Solver {
 
 
     private Node end;
-    private boolean solvable = false;
+    private  boolean solvable = false;
     public Solver(Board initial) {
 
         if (initial == null) throw new IllegalArgumentException();
@@ -68,6 +72,8 @@ public class Solver {
                 break;
             }
             if (tmp2.board.isGoal()) {
+                solvable = false;
+                end = null;
                 break;
             }
 
@@ -91,6 +97,7 @@ public class Solver {
         return end.move;                       // min number of moves to solve initial board; -1 if unsolvable
     }
     public Iterable<Board> solution() {
+        if (!solvable) return null;
         List<Board> re = new LinkedList<>();
         Node tmp = end;
         while (tmp.pre != null) {
@@ -107,7 +114,7 @@ public class Solver {
 
     public static void main(String[] args) {
         // create initial board from file
-        In in = new In("puzzle04.txt");
+        In in = new In("puzzle2x2-unsolvable1.txt");
         int n = in.readInt();
         int[][] blocks = new int[n][n];
         for (int i = 0; i < n; i++)

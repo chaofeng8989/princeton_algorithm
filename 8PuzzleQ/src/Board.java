@@ -8,13 +8,9 @@ public class Board {
     private final int d;
     private int hamming, manhattan;
     private int zeroX, zeroY;
-    private static int[][] goal;
-
-
-
     public Board(int[][] blocks) {
+
         d = blocks.length;
-        if(goal == null) buildGoal();
         hamming = 0;
         manhattan = 0;
         board = new int[d] [d];
@@ -24,8 +20,8 @@ public class Board {
                 int target = i * d + j + 1;
                 int value = blocks[i][j];
                 if (value == 0) {
-                   zeroX = i;
-                   zeroY = j;
+                    zeroX = i;
+                    zeroY = j;
                 }
                 board[i][j] = value;
                 if (value != target) hamming += 1;
@@ -46,7 +42,8 @@ public class Board {
         return manhattan;
     }             // sum of Manhattan distances between blocks and goal
     public boolean isGoal() {
-        return this.equals(goal);
+        return hamming == 0;
+
     }             // is this board the goal board?
     public Board twin() {
         int x1 = -1, x2 = -1, y1 = -1, y2 = -1;
@@ -113,17 +110,6 @@ public class Board {
         board[x1][y1] = board[x2][y2];
         board[x2][y2] = tmp;
         return newBoard;
-    }
-
-    private void buildGoal() {
-        goal = new int[d][];
-        for (int i = 0; i < d; i++) {
-            goal[i] = new int[d];
-            for (int j = 0; j < d; j++) {
-                goal[i][j] = i * d + j + 1;
-            }
-        }
-        goal[d - 1][d - 1] = 0;
     }
     public static void main(String[] args) {
 

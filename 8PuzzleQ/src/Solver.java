@@ -46,11 +46,12 @@ public class Solver {
 
 
 
-    private Node end;
+    private Node complete, end;
     private boolean solvable = false;
     public Solver(Board initial) {
 
         if (initial == null) throw new IllegalArgumentException();
+        buildComplete(initial.dimension());
         MinPQ<Node> pq1 = new MinPQ<>(), pq2 = new MinPQ<>();
 
         Node initialNode = new Node(initial, null, 0);
@@ -62,12 +63,12 @@ public class Solver {
 
         while (!pq1.isEmpty() && !pq2.isEmpty()) {
             Node tmp1 = pq1.delMin(), tmp2 = pq2.delMin();
-            if (tmp1.board.isGoal()) {
+            if (tmp1.equals(complete)) {
                 solvable = true;
                 end = tmp1;
                 break;
             }
-            if (tmp2.board.isGoal()) {
+            if (tmp2.equals(complete)) {
                 break;
             }
 
@@ -104,7 +105,17 @@ public class Solver {
 
     }// sequence of boards in a shortest solution; null if unsolvable
 
-
+    private void buildComplete(int d){
+        int[][] com = new int[d][];
+        for (int i = 0; i < d; i++) {
+            com[i] = new int[d];
+            for (int j = 0; j < d; j++) {
+                com[i][j] = i * d + j + 1;
+            }
+        }
+        com[d-1][d-1] = 0;
+        complete = new Node(new Board(com), null, 0);
+    }
     public static void main(String[] args) {
         // create initial board from file
         In in = new In("puzzle04.txt");

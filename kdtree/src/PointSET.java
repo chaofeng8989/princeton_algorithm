@@ -2,12 +2,13 @@ import edu.princeton.cs.algs4.Point2D;
 import edu.princeton.cs.algs4.RectHV;
 import edu.princeton.cs.algs4.StdDraw;
 
+import java.util.Set;
 import java.util.TreeSet;
 
 public class PointSET {
-    TreeSet<Point2D> set;
+    private final TreeSet<Point2D> set;
     public         PointSET() {
-        this.set = new TreeSet();
+        this.set = new TreeSet<>();
     }                              // construct an empty set of points
     public           boolean isEmpty() {
         return set.isEmpty();
@@ -16,9 +17,11 @@ public class PointSET {
         return set.size();
     }                        // number of points in the set
     public              void insert(Point2D p) {
+        if(p == null) throw new IllegalArgumentException();
         set.add(p);
     }             // add the point to the set (if it is not already in the set)
     public           boolean contains(Point2D p) {
+        if(p == null) throw new IllegalArgumentException();
         return set.contains(p);
     }           // does the set contain point p?
     public              void draw() {
@@ -27,13 +30,25 @@ public class PointSET {
         }
     }                        // draw all points to standard draw
     public Iterable<Point2D> range(RectHV rect) {
-        return null;
+        if (rect == null) throw new IllegalArgumentException();
+        Set<Point2D> in = new TreeSet<>();
+        for (Point2D p : set) {
+            if (rect.contains(p)) in.add(p);
+        }
+        return in;
     }            // all points that are inside the rectangle (or on the boundary)
     public           Point2D nearest(Point2D p) {
-        return null;
+        if(p == null) throw new IllegalArgumentException();
+        double nearest = Double.MAX_VALUE;
+        Point2D pn = null;
+        for (Point2D e : set) {
+            if ( e.distanceSquaredTo(p) < nearest) {
+                pn = e;
+                nearest = e.distanceSquaredTo(p);
+            }
+        }
+        return pn;
     }            // a nearest neighbor in the set to point p; null if the set is empty
 
-    public static void main(String[] args) {
-
-    }                 // unit testing of the methods (optional)
+             // unit testing of the methods (optional)
 }

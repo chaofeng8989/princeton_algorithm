@@ -25,6 +25,7 @@ public class RangeSearchVisualizer {
         In in = new In(filename);
         PointSET brute = new PointSET();
         KdTree kdtree = new KdTree();
+
         while (!in.isEmpty()) {
             double x = in.readDouble();
             double y = in.readDouble();

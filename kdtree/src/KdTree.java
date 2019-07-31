@@ -40,11 +40,11 @@ public class KdTree {
         while (tmp != null) {
             prev = tmp;
             if(tmp.vertical) {
-               if (tmp.p.x() < n.p.x()) {
+                if (tmp.p.x() < n.p.x()) {
                     tmp = tmp.right;
-               } else {
+                } else {
                     tmp = tmp.left;
-               }
+                }
             } else {
                 if (tmp.p.y() < n.p.y()) {
                     tmp = tmp.right;
@@ -151,12 +151,13 @@ public class KdTree {
     private double minDistance;
     private Point2D nearest;
     public           Point2D nearest(Point2D p) {
+        minDistance = 1.5;
         nearest = null;
         nearest(p, root, 0, 1, 0, 1);
         return nearest;
     }            // a nearest neighbor in the set to point p; null if the set is empty
     private void nearest(Point2D p, Node node, double xstart, double xend, double ystart, double yend) {
-        if (node == null || p.equals(node.p)) return;
+        if (node == null || node.p == p) return;
         double dis = p.distanceSquaredTo(node.p);
         if (dis < minDistance) {
             minDistance = dis;

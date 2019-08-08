@@ -106,7 +106,6 @@ public class WordNet {
     // do unit testing of this class
     public static void main(String[] args) {
         WordNet wn = new WordNet("synsets.txt", "hypernyms.txt");
-        Iterable<String> all = wn.nouns();
         System.out.println(wn.isNoun("globulin"));
         System.out.println(wn.distance("collagen", "globulin"));
     }

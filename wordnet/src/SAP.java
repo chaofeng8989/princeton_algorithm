@@ -9,18 +9,17 @@ import edu.princeton.cs.algs4.StdOut;
 
 
 import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Set;
 
 
 public class SAP {
     private final Digraph G;
     // constructor takes a digraph (not necessarily a DAG)
-    private int[] minPath;
+    private final int[] store;
+    private Set<Integer> prevv, prevw;
     public SAP(Digraph G) {
         this.G = deepCopyG(G);
-        minPath = new int[2];
+        store = new int[2];
     }
     private Digraph deepCopyG(Digraph initialG) {
         Digraph cp = new Digraph(initialG.V());
@@ -31,167 +30,121 @@ public class SAP {
     }
     // length of shortest ancestral path between v and w; -1 if no such path
     public int length(int v, int w) {
-        if (v < 0 || v >= G.V() || w < 0 || w >= G.V()) throw new IllegalArgumentException();
-        ancestor(v, w);
-        return minPath[1];
-    }
-
-
-    // a common ancestor of v and w that participates in a shortest ancestral path; -1 if no such path
-    public int ancestor(int v, int w) {
-        if (v < 0 || v >= G.V() || w < 0 || w >= G.V()) throw new IllegalArgumentException();
-        List<Integer> listv = new LinkedList<>(), listw = new LinkedList<>();
-        listv.add(v);
-        listw.add(w);
-        find(listv, listw);
-        //biBFS(listv, listw);
-        return minPath[0];
-    }
-    private void find(Iterable<Integer> v, Iterable<Integer> w) {
-        int[] disTov = new int[G.V()];
-        int[] disTow = new int[G.V()];
-        for (int i = 0; i < G.V(); i++) {
-            disTov[i] = -1;
-            disTow[i] = -1;
-        }
-        for (int i : v)disTov[i] = 0;
-        for (int i : w)disTow[i] = 0;
-
-        bfs(v, disTov);
-        bfs(w, disTow);
-        int min = Integer.MAX_VALUE;
-        int mini = -1;
-
-        // print(disTov);
-        // print(disTow);
-        for (int i = 0; i < G.V(); i++) {
-            if ((disTov[i] != -1 && disTow[i] != -1)) {
-                if (min > disTov[i] + disTow[i]) {
-                    min = disTov[i] + disTow[i];
-                    mini = i;
-                }
-            }
-        }
-
-
-        if (mini == -1) min = -1;
-        minPath[0] = mini;
-        minPath[1] = min;
-    }
-    private void print(int[] xx) {
-        for (int x : xx) System.out.print(x + ", ");
-        System.out.println();
-    }
-
-
-    private void biBFS(Iterable<Integer> starts, Iterable<Integer> ends) {
-        int[] startDP = new int[G.V()], endDP = new int[G.V()];
-        for (int i = 0; i < G.V(); i++) {
-            startDP[i] = -1;
-            endDP[i] = -1;
-        }
-        Set<Integer> startSet = new HashSet<>(), endSet = new HashSet<>();
-        minPath = new int[2];
-        for (int i : starts) {
-            startSet.add(i);
-            startDP[i] = 0;
-        }
-        for (int i : ends) {
-            endSet.add(i);
-            endDP[i] = 0;
-        }
-
-        int dis = 0;
-        Set<Integer> tmp = new HashSet<>();
-
-        while (!startSet.isEmpty() && !endSet.isEmpty()) {
-            for (int start : startSet) {
-                if (endDP[start] != -1){
-                    minPath[0] = start;
-                    minPath[1] = dis + endDP[start];
-                    return;
-                } else {
-                    startDP[start] = dis;
-                    for (int adj : G.adj(start)) {
-                        tmp.add(adj);
-                    }
-                }
-            }
-            startSet.clear();
-            for (int i : tmp) {
-                if (startDP[i] == -1) startSet.add(i);
-            }
-            tmp.clear();
-
-            for (int end : endSet) {
-                if (startDP[end] != -1){
-                    minPath[0] = end;
-                    minPath[1] = dis + startDP[end];
-                    return;
-                } else {
-                    endDP[end] = dis;
-                    for (int adj : G.adj(end)) {
-                        tmp.add(adj);
-                    }
-                }
-            }
-            endSet.clear();;
-            for (int i : tmp) {
-                if (endDP[i] == -1) endSet.add(i);
-            }
-            tmp.clear();
-            dis++;
-//            print(startDP);
-//            print(endDP);
-//            System.out.println();
-        }
-
-
-        minPath = new int[]{-1, -1};
-
-
-
-    }
-
-
-    private void bfs(Iterable<Integer> starts, int[] disToTarget) {
-        Queue<Integer> q = new Queue<>();
-        for (int p : starts) q.enqueue(p);
-        int dis = 0;
-        while (!q.isEmpty()) {
-            int size = q.size();
-            Set<Integer> set = new HashSet<>();
-            for (int i = 0; i < size; i++) {
-                int node = q.dequeue();
-                disToTarget[node] = dis;
-                for (int adj : G.adj(node)) set.add(adj);
-            }
-            for (int node : set) {
-                if (disToTarget[node] == -1) q.enqueue(node);
-            }
-
-            dis++;
-        }
+        Set<Integer> setv = new HashSet<>(), setw = new HashSet<>();
+        setv.add(v);
+        setw.add(w);
+        return lengthForSet(setv, setw);
     }
 
     // length of shortest ancestral path between any vertex in v and any vertex in w; -1 if no such path
     public int length(Iterable<Integer> v, Iterable<Integer> w) {
         if (v == null || w == null) throw new IllegalArgumentException();
-        for (Integer i : v) if (i == null || i < 0 || i >= G.V()) throw new IllegalArgumentException();
-        for (Integer i : w) if (i == null || i < 0 || i >= G.V()) throw new IllegalArgumentException();
+        Set<Integer> setv = new HashSet<>(), setw = new HashSet<>();
+        for (Integer i : v) setv.add(i);
+        for (Integer i : w) setw.add(i);
+        return lengthForSet(setv, setw);
 
-        ancestor(v, w);
-        return minPath[1];
+    }
+
+    private int lengthForSet(Set<Integer> setv, Set<Integer> setw) {
+        for (Integer i : setv) {
+            if (i == null || i < 0 || i >= G.V()) throw new IllegalArgumentException();
+        }
+        for (Integer i : setw) {
+            if (i == null || i < 0 || i >= G.V()) throw new IllegalArgumentException();
+        }
+        //if (prevv != null && prevw != null &&isSame(prevv, setv) && isSame(prevw, setw)) return store[0];
+        biBFS(setv, setw);
+        prevv = setv;
+        prevw = setw;
+        return store[0];
+    }
+    // a common ancestor of v and w that participates in a shortest ancestral path; -1 if no such path
+    public int ancestor(int v, int w) {
+        Set<Integer> setv = new HashSet<>(), setw = new HashSet<>();
+        setv.add(v);
+        setw.add(w);
+        return ancestorForSet(setv, setw);
     }
 
     // a common ancestor that participates in shortest ancestral path; -1 if no such path
     public int ancestor(Iterable<Integer> v, Iterable<Integer> w) {
         if (v == null || w == null) throw new IllegalArgumentException();
-        for (Integer i : v) if (i == null || i < 0 || i >= G.V()) throw new IllegalArgumentException();
-        for (Integer i : w) if (i == null || i < 0 || i >= G.V()) throw new IllegalArgumentException();
-        find(v, w);
-        //biBFS(v, w);
-        return minPath[0];
+        Set<Integer> setv = new HashSet<>(), setw = new HashSet<>();
+        for (Integer i : v) setv.add(i);
+        for (Integer i : w) setw.add(i);
+        return ancestorForSet(setv, setw);
+    }
+
+    private int ancestorForSet(Set<Integer> setv, Set<Integer> setw) {
+        for (Integer i : setv) {
+            if (i == null || i < 0 || i >= G.V()) throw new IllegalArgumentException();
+        }
+        for (Integer i : setw) {
+            if (i == null || i < 0 || i >= G.V()) throw new IllegalArgumentException();
+        }
+        //if (prevv != null && prevw != null &&isSame(prevv, setv) && isSame(prevw, setw)) return store[1];
+        biBFS(setv, setw);
+        prevv = setv;
+        prevw = setw;
+        return store[1];
+    }
+
+    private boolean isSame(Set<Integer> prev, Set<Integer> now) {
+        if (prev.size() != now.size()) return false;
+        for (int i : prev) {
+            if (!now.contains(i)) return false;
+        }
+        return true;
+    }
+
+    private void biBFS(Set<Integer> starts, Set<Integer> ends) {
+        int dis = 0;
+        int mini = -1;
+        int min = Integer.MAX_VALUE;
+        int[] disToStart = new int[G.V()], disToEnd = new int[G.V()];
+        for (int i = 0; i < G.V(); i++) {
+            disToEnd[i] = -1;
+            disToStart[i] = -1;
+        }
+        Set<Integer> tmp = new HashSet<>();
+        while (!starts.isEmpty() || !ends.isEmpty()) {
+            if (dis >= min) break;
+            for (int i : starts) {
+                disToStart[i] = dis;
+                if (disToEnd[i] != -1) {
+                    if (min > dis + disToEnd[i]) {
+                        mini = i;
+                        min = dis + disToEnd[i];
+                    }
+                }
+                for (int adj : G.adj(i)) tmp.add(adj);
+            }
+            starts.clear();
+            for (int i : tmp) {
+                if (disToStart[i] == -1) starts.add(i);
+            }
+            tmp.clear();
+
+            for (int i : ends) {
+                disToEnd[i] = dis;
+                if (disToStart[i] != -1) {
+                    if (min > dis + disToStart[i]) {
+                        mini = i;
+                        min = dis + disToStart[i];
+                    }
+                }
+                for (int adj : G.adj(i)) tmp.add(adj);
+            }
+            ends.clear();
+            for (int i : tmp) {
+                if (disToEnd[i] == -1) ends.add(i);
+            }
+            tmp.clear();
+            dis++;
+        }
+        if (mini == -1) {store[0] = -1; store[1] = -1;}
+        else {store[0] = min; store[1] = mini;}
     }
 
     public static void main(String[] args) {
@@ -206,4 +159,6 @@ public class SAP {
             StdOut.printf("length = %d, ancestor = %d\n", length, ancestor);
         }
     }
+
+
 }

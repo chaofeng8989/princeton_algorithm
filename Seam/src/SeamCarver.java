@@ -3,22 +3,22 @@ import edu.princeton.cs.algs4.Picture;
 import java.awt.Color;
 
 public class SeamCarver {
-    //private Picture picture;
-    private Color[][] pic;
-    private int width, height;
-    private double[][] energy;
-    private double[][] dis;
-    private int[][] lastEdge;
+    // private Picture picture;
+    private int[][] pic;            // 4byte n*n
+    private int width, height;      //  ~0
+    private double[][] energy;     //   8byte n*n
+    private int[][] lastEdge;      //  4byte n*n
+                                   // total 16byte n*n,    should be 12byte n*n to collect all points.
     // create a seam carver object based on the given picture
     public SeamCarver(Picture picture) {
         if (picture == null) throw new IllegalArgumentException();
         this.height = picture.height();
         this.width = picture.width();
-        pic = new Color[width][];
+        pic = new int[width][];
         for (int i = 0; i < width; i++) {
-            pic[i] = new Color[height];
+            pic[i] = new int[height];
             for (int j = 0; j < height; j++) {
-                pic[i][j] = picture.get(i, j);
+                pic[i][j] = picture.getRGB(i, j);
             }
         }
     }
@@ -28,7 +28,7 @@ public class SeamCarver {
         Picture picture = new Picture(width, height);
         for (int i = 0; i < width; i++) {
             for (int j = 0; j < height; j++) {
-                picture.set(i, j, pic[i][j]);
+                picture.setRGB(i, j, pic[i][j]);
             }
         }
         return picture;
@@ -60,23 +60,30 @@ public class SeamCarver {
     // sequence of indices for horizontal seam
     public int[] findHorizontalSeam() {
         init(pic);
+        double first, second, third;
+        double[] lastDis = new double[height];
         for (int i = 0; i < width; i++) {
-            for (int j = 1; j < height - 1; j++) {
-                if (i == 0) {
-                    dis[i][j] = energy[i][j];
-                    continue;
-                }
-                int minIndex = findMin(dis[i-1][j-1], dis[i-1][j], dis[i-1][j+1]);
-                dis[i][j] = energy[i][j] + dis[i-1][j+minIndex];
+            double[] newDis = new double[height];
+            newDis[0] = Double.POSITIVE_INFINITY;
+            newDis[height - 1] = Double.POSITIVE_INFINITY;
+            for (int j = 0; j < height; j++) {
+                if (j-1 >= 0) first = lastDis[j-1];
+                else first = Double.POSITIVE_INFINITY;
+                second = lastDis[j];
+                if (j+1 < height) third = lastDis[j+1];
+                else third = Double.POSITIVE_INFINITY;
+                int minIndex = findMin(first, second, third);
+                newDis[j] = energy[i][j] + lastDis[j+minIndex];
                 lastEdge[i][j] = j + minIndex;
             }
+            lastDis = newDis;
         }
 
         int[] seam = new int[width];
-        double min = Double.MAX_VALUE;
+        double min = Double.POSITIVE_INFINITY;
         for (int i = 0; i < height; i++) {
-            if (min > dis[width - 1][i]) {
-                min = dis[width -1][i];
+            if (min > lastDis[i]) {
+                min = lastDis[i];
                 seam[width - 1] = i;
             }
         }
@@ -90,23 +97,30 @@ public class SeamCarver {
     // sequence of indices for vertical seam
     public int[] findVerticalSeam() {
         init(pic);
+        double[] lastDis = new double[width];
+        double first, second, third;
         for (int j = 0; j < height; j++) {
-            for (int i = 1; i < width - 1; i++) {
-                if (j == 0) {
-                    dis[i][j] = energy[i][j];
-                    continue;
-                }
-                int minIndex = findMin(dis[i-1][j-1], dis[i][j-1], dis[i+1][j-1]);
-                dis[i][j] = energy[i][j] + dis[i+minIndex][j-1];
+            double[] newDis = new double[width];
+            newDis[0] = Double.POSITIVE_INFINITY;
+            newDis[width - 1] = Double.POSITIVE_INFINITY;
+            for (int i = 0; i < width; i++) {
+                if (i-1 >= 0) first = lastDis[i-1];
+                else first = Double.POSITIVE_INFINITY;
+                second = lastDis[i];
+                if (i+1 < width) third = lastDis[i+1];
+                else third = Double.POSITIVE_INFINITY;
+                int minIndex = findMin(first, second, third);
+                newDis[i] = energy[i][j] + lastDis[i+minIndex];
                 lastEdge[i][j] = i + minIndex;
             }
+            lastDis = newDis;
         }
 
         int[] seam = new int[height];
-        double min = Double.MAX_VALUE;
+        double min = Double.POSITIVE_INFINITY;
         for (int i = 0; i < width; i++) {
-            if (min > dis[i][height - 1]) {
-                min = dis[i][height -1];
+            if (min > lastDis[i]) {
+                min = lastDis[i];
                 seam[height - 1] = i;
             }
         }
@@ -130,9 +144,9 @@ public class SeamCarver {
         if (seam == null || seam.length != width) throw new IllegalArgumentException();
         verifySeam(seam, height);
         if (height <= 1) throw new IllegalArgumentException();
-        Color[][] newP = new Color[width][];
+        int[][] newP = new int[width][];
         for (int i = 0; i < width; i++) {
-            newP[i] = new Color[height - 1];
+            newP[i] = new int[height - 1];
         }
         for (int i = 0; i < width; i++) {
             for (int jn = 0, jo = 0; jn < height-1; jn++, jo++) {
@@ -149,9 +163,9 @@ public class SeamCarver {
         if (seam == null || seam.length != height) throw new IllegalArgumentException();
         verifySeam(seam, width);
         if (width <= 1) throw new IllegalArgumentException();
-        Color[][] newP = new Color[width - 1][];
+        int[][] newP = new int[width - 1][];
         for (int i = 0; i < width-1; i++) {
-            newP[i] = new Color[height];
+            newP[i] = new int[height];
         }
 
         for (int j = 0; j < height; j++) {
@@ -165,14 +179,11 @@ public class SeamCarver {
     }
 
 
-    private void init(Color[][] pic) {
-        dis = new double[width][];
+    private void init(int[][] pic) {
         lastEdge = new int[width][];
         for (int i = 0; i < width; i++) {
-            dis[i] = new double[height];
             lastEdge[i] = new int[height];
             for (int j = 0; j < height; j++) {
-                dis[i][j] = Double.MAX_VALUE;
                 lastEdge[i][j] = -1;
             }
         }
@@ -197,13 +208,16 @@ public class SeamCarver {
         int rx = 0, gx = 0, bx = 0, ry = 0, gy = 0, by = 0;
         for (int i = 1; i < width - 1; i++) {
             for (int j = 1; j < height - 1; j++) {
-                rx = pic[i - 1][j].getRed() - pic[i + 1][j].getRed();
-                gx = pic[i - 1][j].getGreen() - pic[i + 1][j].getGreen();
-                bx = pic[i - 1][j].getBlue() - pic[i + 1][j].getBlue();
+                rx = ((pic[i - 1][j] >> 16) &0xFF) - ((pic[i + 1][j] >> 16) &0xFF);
 
-                ry = pic[i][j - 1].getRed() - pic[i][j + 1].getRed();
-                gy = pic[i][j - 1].getGreen() - pic[i][j + 1].getGreen();
-                by = pic[i][j - 1].getBlue() - pic[i][j + 1].getBlue();
+
+                gx = ((pic[i - 1][j] >> 8) &0xFF) - ((pic[i + 1][j] >> 8) &0xFF);
+                bx = ((pic[i - 1][j] >> 0) &0xFF) - ((pic[i + 1][j] >> 0) &0xFF);
+
+
+                ry = ((pic[i][j - 1] >> 16) & 0xFF) - ((pic[i][j + 1] >> 16) & 0xFF);
+                gy = ((pic[i][j - 1] >> 8) & 0xFF) - ((pic[i][j + 1] >> 8) & 0xFF);
+                by = ((pic[i][j - 1] >> 0) & 0xFF) - ((pic[i][j + 1] >> 0) & 0xFF);
                 double value = Math.sqrt(rx*rx + gx*gx +bx*bx + ry*ry +gy*gy + by*by);
                 energy[i][j] = value;
             }

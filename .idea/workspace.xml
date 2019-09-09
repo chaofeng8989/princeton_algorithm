@@ -1,12 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38f72f16-1719-4a39-8d75-93518bb66364" name="Default Changelist" comment="kdtree 97 point with better memory usage">
-      <change afterPath="$PROJECT_DIR$/Seam/Seam.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/algs4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/algs4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="38f72f16-1719-4a39-8d75-93518bb66364" name="Default Changelist" comment="push">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/Algorithms, Part I.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/BruteCollinearPoints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/FastCollinearPoints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/LineSegment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/Point$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/collinear.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/equidistant.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/grid4x4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/grid5x5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/grid6x6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/horizontal100.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/horizontal25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/horizontal5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/horizontal50.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/horizontal75.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/inarow.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input100.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input1000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input10000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input150.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input2000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input250.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input299.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input300.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input3000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input350.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input40.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input400.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input4000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input48.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input50.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input5000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input56.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input6000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input80.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input8000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/input9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/kw1260.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/mystery10089.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/patternRecognition.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/random152.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/random23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/random38.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/random91.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/rs1423.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/rs1423.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/vertical100.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/vertical25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/vertical5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/vertical50.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patternRecognition/vertical75.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/Algorithms, Part I.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/CREDITS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/InteractivePercolationVisualizer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/Percolation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/PercolationStats.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/PercolationVisualizer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/greeting57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/greeting57.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/heart25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/heart25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input1-no.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input1-no.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input10-no.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input10-no.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input2-no.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input2-no.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input50.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input8-dups.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input8-dups.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input8-no.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input8-no.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/input8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/java60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/java60.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/jerry47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/jerry47.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/percolation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/percolation_submit.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/sedgewick60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/sedgewick60.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/snake101.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/snake101.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/snake13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/snake13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/wayne98.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/wayne98.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +161,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Seam/src/SeamCarver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="211" lean-forward="true" selection-start-line="211" selection-end-line="211" />
+            <state relative-caret-position="489">
+              <caret line="198" column="5" selection-start-line="198" selection-start-column="5" selection-end-line="198" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -165,10 +291,6 @@
           <expand>
             <path>
               <item name="online_courses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="percolation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="online_courses" type="b2602c69:ProjectViewProjectNode" />
               <item name="Seam" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -180,7 +302,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568057356146" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568057779373" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -385,7 +507,35 @@
       <option name="project" value="LOCAL" />
       <updated>1568055788806</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="push">
+      <created>1568057335879</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1568057335879</updated>
+    </task>
+    <task id="LOCAL-00014" summary="push">
+      <created>1568057345058</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1568057345058</updated>
+    </task>
+    <task id="LOCAL-00015" summary="push">
+      <created>1568057392353</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1568057392353</updated>
+    </task>
+    <task id="LOCAL-00016" summary="push">
+      <created>1568057560699</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1568057560699</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -867,8 +1017,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Seam/src/SeamCarver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="211" lean-forward="true" selection-start-line="211" selection-end-line="211" />
+        <state relative-caret-position="489">
+          <caret line="198" column="5" selection-start-line="198" selection-start-column="5" selection-end-line="198" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -925,7 +1075,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Seam</last-edited>
+          <last-edited>percolation</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

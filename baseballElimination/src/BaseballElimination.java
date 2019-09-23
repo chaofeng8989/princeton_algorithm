@@ -61,7 +61,7 @@ public class BaseballElimination {
                 destination 1 (# (n + n*n) / 2 + 1)
                 matches  n*(n-1)/2   {n  ->  (n + n*n) / 2}
                 teams n            {0 - n - 1}
-                total = n*n + 2;
+                total = (n*n +n) /2 + 2;
 
 
              */

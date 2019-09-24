@@ -7,7 +7,7 @@ import java.util.Set;
 public class BoggleSolver
 {
     private Node root;
-    private Set<String> validWords;
+
     private class Node {
         int score;
         Node[] next = new Node[26];
@@ -53,7 +53,7 @@ public class BoggleSolver
 
     // Returns the set of all valid words in the given Boggle board, as an Iterable.
     public Iterable<String> getAllValidWords(BoggleBoard board) {
-        validWords = new HashSet<>();
+        Set<String> validWords = new HashSet<>();
 
         boolean[][] visited = new boolean[board.rows()][];
         for (int i = 0; i < board.rows(); i++) visited[i] = new boolean[board.cols()];
